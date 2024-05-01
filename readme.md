@@ -7,6 +7,7 @@ This project implements a real-time chat application with features like text mes
 - **Real-time Chat**: Users can send and receive text messages instantaneously.
 - **File Sharing**: Support for sharing images, videos, and other files in real-time.
 - **User Activity Tracking**: Dynamic display of active users and their online status.
+- **Admin Dashboard**: Manage users, view chat analytics, and perform administrative tasks.
 - **Scalability**: Designed to handle a growing user base with scalability in mind.
 - **Cloud Storage**: Leveraging Cloudinary for flexible and secure file management.
 
@@ -28,6 +29,9 @@ Use Cloudinary's JavaScript SDK for direct file uploads from the browser to Clou
 ### Backend (Node.js, Express.js)
 Set up Express.js for server-side routing and API endpoints. Integrate Socket.IO with Express.js server for real-time communication. Implement API endpoints for user authentication (if applicable), sending text messages, uploading files, and downloading files. Utilize Cloudinary's Node.js SDK for additional operations on uploaded files like resizing or applying transformations. Broadcast messages, file sharing events (including file URLs), and user activity updates to all connected users using Socket.IO.
 
+### Admin Dashboard
+Create an admin dashboard using React.js to manage users, view chat analytics, and perform administrative tasks. Implement authentication and authorization to restrict access to the admin dashboard.
+
 ### Database (MongoDB)
 Store user information (if applicable) using Mongoose ODM for data modeling. Store metadata about uploaded files in MongoDB, including message ID, Cloudinary public URL, and additional details as needed.
 
@@ -43,6 +47,6 @@ Create a Cloudinary account and obtain necessary credentials. Configure Cloudina
 6. Access the application in your browser and start chatting!
 
 ## Contributors
-- [Ankijit1](https://github.com/Ankijit2)
+- [Ankijit](https://github.com/Ankijit2)
 
 
