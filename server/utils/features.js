@@ -11,13 +11,14 @@ const cookieOptions = {
   secure: true,
 };
 
-const connectDB = (uri) => {
-  mongoose
-    .connect(uri, { dbName: "Chattu" })
-    .then((data) => console.log(`Connected to DB: ${data.connection.host}`))
-    .catch((err) => {
-      throw err;
-    });
+const connectDB = async() => {
+  try {
+    const connection = await mongoose.connect(process.env.MONGODB_CONNECT_URI);
+    console.log(`MongoDB connected: ${connection.connection.host}`);
+} catch (error) {
+    console.log(error);
+    process.exit(1)
+}
 };
 
 const sendToken = (res, user, code, message) => {
