@@ -39,6 +39,7 @@ const adminSecretKey = process.env.ADMIN_SECRET_KEY || "adsasdsdfsdfsdfd";
 const userSocketIDs = new Map();
 const onlineUsers = new Set();
 
+connectDB(mongoURI);
 
 
 cloudinary.config({
