@@ -13,7 +13,7 @@ const cookieOptions = {
 
 const connectDB = async() => {
   try {
-    const connection = await mongoose.connect(process.env.MONGO_URI);
+    const connection = await mongoose.connect("mongodb+srv://ankijit714:Bs0Re5Ma6KbIp75C@youtubeclone.ht4aqmm.mongodb.net/?retryWrites=true&w=majority&appName=YoutubeClone");
    
     console.log("MongoDB connected");
    
