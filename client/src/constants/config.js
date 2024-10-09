@@ -1,1 +1,1 @@
-export const server = import.meta.env.API_SERVER;
+export const server = "https://bingee-api.onrender.com";
