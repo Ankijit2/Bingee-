@@ -31,7 +31,7 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 const mongoURI = process.env.MONGO_URI;
-console.log(mongoURI);
+
 const port = process.env.PORT || 3000;
 const envMode = process.env.NODE_ENV.trim() || "PRODUCTION";
 const adminSecretKey = process.env.ADMIN_SECRET_KEY || "adsasdsdfsdfsdfd";
